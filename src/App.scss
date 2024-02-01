@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #b5edf0;
+}
+@font-face {
+  font-family: "SpaceGrotesk";
+  src: url("../src/assets/fonts/SpaceGrotesk-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../src/assets/fonts/Montserrat-VariableFont_wght.ttf");
+}
+body {
+  background: #000000;
+}
+.container {
+  // max-width: 1200px;
+  // margin: 0 auto;
+  // padding: 20px 70px;
+  // background: #000000ad;
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 20px 70px;
+  background: rgb(0 0 0 / 86%);
+  position: relative;
+  z-index: 1;
+}
+.bg {
+  
+}
+.white {
+  background: #fff;
+}
+.app {
+}

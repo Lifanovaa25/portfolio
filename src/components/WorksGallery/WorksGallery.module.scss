@@ -1,0 +1,33 @@
+.title {
+  font-size: 24px;
+  font-family: 'Rubik', sans-serif;
+
+  text-transform: uppercase;
+  background:  linear-gradient(135deg, #0fa 20%, #fff 70%);;
+  // background: repeating-linear-gradient(white, white 2px, #7AB4E2 2px, #7AB4E2 3px);
+  // linear-gradient(45deg, #0B2349 33%, #0D61BC 66%, #8AA9D6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #183D58;
+  display: table;
+  margin: 20px auto; 
+  text-wrap: wrap;
+  text-align: left;
+  width: 100%;
+  span {
+    font-size: 24px;
+    text-shadow: 0 0 7px #fff, 0 0 0px #fff, 0 0 1px #fff, 0 0 35px #0fa, 0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 136px #0fa;
+    line-height: 120%;
+  }
+}
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+      background: rgb(0 0 0 / 86%);
+    padding: 20px;
+    
+}
+.left {
+  max-width: 50%;
+}

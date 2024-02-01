@@ -1,0 +1,71 @@
+@import url(https://fonts.googleapis.com/css?family=Rubik:300,regular,500,700);
+
+// html,
+// body {
+//   min-height: 100vh;
+// }
+
+// body {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   row-gap: 50px;
+
+//   font-family: "Rubik", sans-serif;
+// }
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  // width: 100%;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+
+  // padding: 40px 15px 50px;
+  // background: linear-gradient(92.7deg, #4cb8c4 0%, #3cd3ad 100%), #232323;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.logo {
+//   margin-right: 20px;
+  svg {
+    width: 65px;
+    height: 65px;
+  }
+}
+.title {
+  font-family: Montserrat;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #4793ff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.change_theme, .logo {
+margin-right: 20px;
+}
+.change_theme {
+  cursor: pointer;
+}
+@media (max-width:620px) {
+  .header {
+    flex-wrap: wrap;
+    >div {
+      width: 100%;
+    }
+  }
+  
+}
