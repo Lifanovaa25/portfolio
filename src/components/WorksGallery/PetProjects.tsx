@@ -1,7 +1,6 @@
 import s from "./WorksGallery.module.scss";
 import chess from "./../../assets/images/webp/preview_chess.webp";
 import weather from "./../../assets/images/webp/weather.webp";
-import { Tabs } from "./Tabs";
 
 export const PetProjects = () => {
   return (
