@@ -26,9 +26,17 @@ body {
 
   position: relative;
   z-index: 1;
+  @media (max-width: 600px) {
+    max-width: 100%;
+    padding: 20px;
+  }
 }
 .bg {
-    background: rgb(0 0 0 / 86%);
+  background: rgb(0 0 0 / 86%);
+  @media (max-width: 600px) {
+  background: rgb(0 0 0 / 56%);
+
+  }
 }
 .white {
   background: #fff;
@@ -37,4 +45,7 @@ body {
 }
 section {
   margin-bottom: 35px;
+  @media (max-width: 600px) {
+    margin-bottom: 70px;
+  }
 }

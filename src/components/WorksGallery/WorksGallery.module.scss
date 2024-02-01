@@ -66,6 +66,9 @@
     border-radius: 12px;
     margin-bottom: 15px;
   }
+  @media (max-width: 600px) {
+    width: 100%;
+  }
 }
 .project_name {
   font-size: 22px;
@@ -82,11 +85,10 @@
   }
 }
 
-
 .tabs {
   display: flex;
   justify-content: space-between;
-margin-top: 40px;
+  margin-top: 40px;
   margin-bottom: 30px;
 }
 
@@ -110,11 +112,11 @@ margin-top: 40px;
     // background: #0a3828;
     background: #0e563c;
 
-    color:#fff;
+    color: #fff;
   }
   &.active {
     background: #0e563c;
-    color:#fff;
+    color: #fff;
   }
 }
 

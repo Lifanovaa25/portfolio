@@ -21,6 +21,13 @@
     text-shadow: 0 0 7px #fff, 0 0 0px #fff, 0 0 1px #fff, 0 0 29px #0fa,
       0 0 77px #0fa, 0 0 89px #0fa, 0 0 102px #0fa, 0 0 136px #0fa;
   }
+  @media (max-width: 600px) {
+    font-size: 40px;
+    text-align: center;
+    span {
+      font-size: 43px;
+    }
+  }
 }
 .wrapper {
   display: flex;
@@ -31,4 +38,7 @@
 }
 .left {
   max-width: 50%;
+  @media (max-width: 600px) {
+    max-width: 100%;
+  }
 }
