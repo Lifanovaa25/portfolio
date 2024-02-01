@@ -1,25 +1,87 @@
 {
-  "compilerOptions": {
-    "target": "ES2020",
-    "useDefineForClassFields": true,
-    "lib": ["ES2020", "DOM", "DOM.Iterable"],
-    "module": "ESNext",
-    "skipLibCheck": true,
-
-    /* Bundler mode */
-    "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react-jsx",
-
-    /* Linting */
-    "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
-  },
-  "include": ["src"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+	"include": [
+		"src"
+	],
+	"compilerOptions": {
+		"target": "ES2020",
+		"useDefineForClassFields": true,
+		"lib": [
+			"ES2020",
+			"DOM",
+			"DOM.Iterable"
+		],
+		"module": "ESNext",
+		"skipLibCheck": true,
+		"baseUrl": ".",
+		"paths": {
+			"~@types/*": [
+				"src/@types/*"
+			],
+			"~assets/*": [
+				"src/assets/*"
+			],
+			"~components/*": [
+				"src/components/*"
+			],
+			"~constants/*": [
+				"src/constants/*"
+			],
+			"~hooks/*": [
+				"src/hooks/*"
+			],
+			"~pages/*": [
+				"src/pages/*"
+			],
+			"~store/*": [
+				"src/store/*"
+			],
+			"~typechain-types/*": [
+				"src/typechain-types/*"
+			],
+			"~utils/*": [
+				"src/utils/*"
+			],
+			"~/*": [
+				"src/*"
+			],
+			"~api/*": [
+				"src/api/*"
+			],
+			"~MegaDicePage — копия/*": [
+				"src/pages/MegaDicePage — копия/*"
+			],
+			"~LimboPage/*": [
+				"src/pages/LimboPage/*"
+			],
+			"~LimboPage — копия/*": [
+				"src/pages/LimboPage — копия/*"
+			],
+			"~CrashPage/*": [
+				"src/pages/CrashPage/*"
+			],
+			"~CrashPage — копия/*": [
+				"src/pages/CrashPage — копия/*"
+			],
+			"~ShuttlePage/*": [
+				"src/pages/ShuttlePage/*"
+			]
+		},
+		/* Bundler mode */
+		"moduleResolution": "bundler",
+		"allowImportingTsExtensions": true,
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+		"noEmit": true,
+		"jsx": "react-jsx",
+		/* Linting */
+		"strict": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"noFallthroughCasesInSwitch": true
+	},
+	"references": [
+		{
+			"path": "./tsconfig.node.json"
+		}
+	]
 }
