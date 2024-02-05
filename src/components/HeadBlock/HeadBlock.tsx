@@ -1,6 +1,9 @@
 import s from "./HeadBlock.module.scss";
+import arrow from "./../../assets/images/arrow-double-start-svgrepo-com.svg";
+import { useState } from "react";
 
 export const HeadBlock = () => {
+  const [height, setHeight] = useState(true);
   // const Items = [
   //   {
   //     skill: "JavaScript",
@@ -26,7 +29,7 @@ export const HeadBlock = () => {
   // ];
   return (
     <>
-      <section>
+      <section className={height ? s.header_section : s.min_height}>
         <div className="container bg ">
           <div className={s.wrapper}>
             <div className={s.left}>
@@ -41,13 +44,23 @@ export const HeadBlock = () => {
                   </span>
                 ))}
               </div> */}
-
-
-
-
             </div>
           </div>
         </div>
+        {height && (
+          <div className={s.bottom_btn}>
+            <div
+              className={[s.btn_arrow, s.puls].join(" ")}
+              onClick={() => {
+                setHeight(!height);
+              }}
+            >
+              <div className={s.bounce}>
+                <img src={arrow} className={s.arrow} alt="" />
+              </div>
+            </div>
+          </div>
+        )}
       </section>
     </>
   );

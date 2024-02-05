@@ -5,7 +5,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import Header from "./components/Header/Header";
 import Chess from "./pages/Chess/Chess";
-import WorksGallery from "./components/WorksGallery/WorksGallery";
+// import WorksGallery from "./components/WorksGallery/WorksGallery";
 // import Weather from "./pages/weather/Weather";
 
 const App = () => {
@@ -17,7 +17,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/chess" element={<Chess />} />
-          <Route path="/worksgallery" element={<WorksGallery />} />
+          {/* <Route path="/worksgallery" element={<WorksGallery />} /> */}
           {/* <Route path="/weather" element={<Weather />} /> */}
         </Routes>
       </BrowserRouter>

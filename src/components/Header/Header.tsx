@@ -31,9 +31,9 @@ export const Header = () => {
             {/* {isOpen && ( */}
                <div className={isOpen ?[s.menu, s.open].join(' ') :[s.menu, s.close].join(' ') }>
               <ul>
-                <li><a href="/worksgallery"> Портфолио</a></li>
+                {/* <li><a href="/worksgallery"> Портфолио</a></li>
                 <li>Контакты</li>
-                <li>Что-то еще</li>
+                <li>Что-то еще</li> */}
               </ul>
             </div>
             {/* )} */}
