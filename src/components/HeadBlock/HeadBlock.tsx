@@ -29,7 +29,7 @@ export const HeadBlock = () => {
   // ];
   return (
     <>
-      <section className={height ?[s.header_section, s.max_height].join(' ') : s.min_height}>
+      <section className={height ?[s.header_section, s.max_height].join(' ') : [s.header_section, s.min_height].join(' ')}>
         <div className="container bg  ">
           <div className={s.wrapper}>
             <div className={s.left}>
