@@ -83,11 +83,12 @@
 }
 .header_section {
   margin-bottom: 35px;
-  height: calc(100vh - 90px);
+  height: calc(100vh - 150px);
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
+  transition: .8s all;
 }
 .min_height {
   height: initial;
@@ -207,7 +208,8 @@
 }
 @keyframes height {
   0% {
-  height: calc(100vh - 90px);
+  height: calc(100vh - 150px);
+  height: 100%;
   // margin: 0;
   }
 25%{
@@ -221,7 +223,7 @@
 
 }
   100% {
-  height: initial;
+  height: 100%;
   // margin: 250px auto;
   }
 }
