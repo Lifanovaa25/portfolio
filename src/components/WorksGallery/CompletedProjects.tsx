@@ -1,10 +1,10 @@
 import s from "./WorksGallery.module.scss";
-import SJ from "./../../assets/images/SJ.png";
-import GPT from "./../../assets/images/chatgpt-trading.io_.png";
-import DBP from "./../../assets/images/dapp.borb.fi_.png";
-import MMNA from "./../../assets/images/mmnalaunch.com_.png";
-import ST from "./../../assets/images/tud-staking.com_.png";
-import BU from "./../../assets/images/richharvest.bestlife27.ru_.png";
+import SJ from "./../../assets/images/SJ.webp";
+import GPT from "./../../assets/images/chatgpt-trading.io_.webp";
+import DBP from "./../../assets/images/dapp.borb.fi_.webp";
+import MMNA from "./../../assets/images/mmnalaunch.com_.webp";
+import ST from "./../../assets/images/tud-staking.com_.webp";
+import BU from "./../../assets/images/richharvest.bestlife27.ru_.webp";
 
 export const CompletedProjects = () => {
   return (

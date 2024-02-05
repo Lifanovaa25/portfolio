@@ -6,7 +6,7 @@ const Home = () => {
     <>
       <HeadBlock />
       {/* <Line />  */}
-      <WorksGallery />
+      {/* <WorksGallery /> */}
     </>
   );
 };
