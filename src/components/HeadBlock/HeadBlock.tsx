@@ -1,29 +1,29 @@
 import s from "./HeadBlock.module.scss";
 
 export const HeadBlock = () => {
-  const Items = [
-    {
-      skill: "JavaScript",
-    },
-    {
-      skill: "HTML 5",
-    },
-    {
-      skill: "CSS / SASS",
-    },
-    {
-      skill: "ReactJS",
-    },
-    {
-      skill: "Redux",
-    },
-    {
-      skill: "AntDesing",
-    },
-    {
-      skill: "Git",
-    },
-  ];
+  // const Items = [
+  //   {
+  //     skill: "JavaScript",
+  //   },
+  //   {
+  //     skill: "HTML 5",
+  //   },
+  //   {
+  //     skill: "CSS / SASS",
+  //   },
+  //   {
+  //     skill: "ReactJS",
+  //   },
+  //   {
+  //     skill: "Redux",
+  //   },
+  //   {
+  //     skill: "AntDesing",
+  //   },
+  //   {
+  //     skill: "Git",
+  //   },
+  // ];
   return (
     <>
       <section>
