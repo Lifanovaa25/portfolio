@@ -1,9 +1,8 @@
 import s from "./HeadBlock.module.scss";
-import arrow from "./../../assets/images/arrow-double-start-svgrepo-com.svg";
-import { useState } from "react";
+// import arrow from "./../../assets/images/arrow-double-start-svgrepo-com.svg";
 
 export const HeadBlock = () => {
-  const [height, setHeight] = useState(true);
+  
   // const Items = [
   //   {
   //     skill: "JavaScript",
