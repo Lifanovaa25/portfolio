@@ -29,8 +29,8 @@ export const HeadBlock = () => {
   // ];
   return (
     <>
-      <section className={height ? s.header_section : s.min_height}>
-        <div className="container bg ">
+      <section className={height ?[s.header_section, s.max_height].join(' ') : s.min_height}>
+        <div className="container bg  ">
           <div className={s.wrapper}>
             <div className={s.left}>
               <h1 className={s.title}>
