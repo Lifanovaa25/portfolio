@@ -90,10 +90,15 @@
   position: relative;
 }
 .min_height {
-  height: fit-content;
-  animation: height 5s ease;
+  height: initial;
+  animation: height 4s ease-in;
   animation-iteration-count:1;
-  margin: 250px auto;
+  // margin: 250px auto;
+  transition: .3s;
+  @media (max-width:600px) {
+  // margin: 150px auto;
+    
+  }
 
 }
 .bottom_btn {
@@ -132,6 +137,8 @@
   animation: bounce 2s infinite;
   height: 100%;
   display: flex;
+  align-items: center;
+    justify-content: center;
 }
 
 @keyframes pulse {
@@ -201,9 +208,20 @@
 @keyframes height {
   0% {
   height: calc(100vh - 90px);
+  // margin: 0;
   }
+25%{
+  height: calc(100vh - 25%);
 
+
+}
+25%{
+  height: calc(100vh - 50%);
+
+
+}
   100% {
-  height: fit-content;
+  height: initial;
+  // margin: 250px auto;
   }
 }

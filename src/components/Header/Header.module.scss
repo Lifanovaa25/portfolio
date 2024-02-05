@@ -30,9 +30,19 @@
     font-weight: 900;
     font-size: 2rem;
   }
+  @media (max-width:600px) {
+    font-size: 1.2rem;
+    width: 70%;
+    span {
+      font-size: 1.5rem;
+    }
+  }
 }
 .right {
   width: 50%;
+  @media (max-width:600px) {
+    width: 30%;
+  }
 }
 
 .burger_checkbox {
