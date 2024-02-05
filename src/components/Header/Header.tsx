@@ -29,7 +29,13 @@ export const Header = () => {
               </label>
             </div>
             {/* {isOpen && ( */}
-               <div className={isOpen ?[s.menu, s.open].join(' ') :[s.menu, s.close].join(' ') }>
+            <div
+              className={
+                isOpen
+                  ? [s.menu, s.open].join(" ")
+                  : [s.menu, s.close].join(" ")
+              }
+            >
               <ul>
                 {/* <li><a href="/worksgallery"> Портфолио</a></li>
                 <li>Контакты</li>
@@ -37,7 +43,6 @@ export const Header = () => {
               </ul>
             </div>
             {/* )} */}
-           
           </div>
         </div>
       </header>

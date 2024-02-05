@@ -29,7 +29,8 @@ export const HeadBlock = () => {
   // ];
   return (
     <>
-      <section className={height ?[s.header_section, s.max_height].join(' ') : [s.header_section, s.min_height].join(' ')}>
+      <section className={s.header_section}>
+        {/* <div className={height ? s.max_height : s.min_height}> */}
         <div className="container bg  ">
           <div className={s.wrapper}>
             <div className={s.left}>
@@ -46,21 +47,22 @@ export const HeadBlock = () => {
               </div> */}
             </div>
           </div>
-        </div>
-        {height && (
-          <div className={s.bottom_btn}>
-            <div
-              className={[s.btn_arrow, s.puls].join(" ")}
-              onClick={() => {
-                setHeight(!height);
-              }}
-            >
-              <div className={s.bounce}>
-                <img src={arrow} className={s.arrow} alt="" />
+          {/* </div> */}
+          {/* {height && (
+            <div className={s.bottom_btn}>
+              <div
+                className={[s.btn_arrow, s.puls].join(" ")}
+                onClick={() => {
+                  setHeight(!height);
+                }}
+              >
+                <div className={s.bounce}>
+                  <img src={arrow} className={s.arrow} alt="" />
+                </div>
               </div>
             </div>
-          </div>
-        )}
+          )} */}
+        </div>
       </section>
     </>
   );
