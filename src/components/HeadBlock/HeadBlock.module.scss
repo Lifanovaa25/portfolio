@@ -284,3 +284,50 @@ width: 100%;
     transform: rotateX(90deg);
   }
 }
+
+.left_animate {
+  //   width: 70%;
+    transform: rotateX(20deg) rotateY(-45deg) rotateZ(0deg);
+    animation-name: left;
+    animation-timing-function: ease-in-out;
+  //   animation-iteration-count: infinite;
+    animation-duration: 5s;
+    transform-style: preserve-3d;
+    opacity: 0;
+    // display: none;
+    transition: all .8s;
+  }
+  @keyframes left {
+    from,
+    to {
+      transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    }
+    0% {
+        display: block;
+        opacity: 1;
+        width: 70%;
+    }
+    33% {
+        transform: rotateX(20deg) rotateY(-45deg) rotateZ(0deg); 
+        width: 70%;
+    }
+    // 33% {
+    //   transform: rotateY(-90deg) rotateZ(90deg);
+    // }
+    50% {
+    
+    }
+    66% { 
+         width: 20%;
+    //   transform: rotateY(-270deg) rotateX(90deg);
+    }
+    83% {
+    //   transform: rotateX(90deg);
+    }
+    100% {
+        max-width: 0;opacity: 0;
+        display: none;
+      transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+
+    }
+  }

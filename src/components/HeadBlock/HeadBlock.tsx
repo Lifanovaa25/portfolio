@@ -1,9 +1,13 @@
+import { FC } from "react";
 import s from "./HeadBlock.module.scss";
 
-export const HeadBlock = () => {
+interface Props {
+ isOpen:boolean | null
+}
+export const HeadBlock: FC<Props> = ({isOpen}) => {
   return (
     <>
-      <section className={s.header_section}>
+      <section className={isOpen ?[s.left_animate ,s.header_section].join(' ') :s.header_section }>
         <div className="container bg  ">
           <div className={s.wrapper}>
             <div className={s.left}>

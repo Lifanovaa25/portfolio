@@ -2,6 +2,7 @@ import { useState } from "react";
 import HeadBlock from "../../components/HeadBlock/HeadBlock";
 import WorksGallery from "../../components/WorksGallery/WorksGallery";
 import s from "./Header.module.scss";
+import style from "./Home.module.scss";
 
 const Home = () => {
   const [isOpen, setOpen] = useState(false);
@@ -38,20 +39,22 @@ const Home = () => {
                   ? [s.menu, s.open].join(" ")
                   : [s.menu, s.close].join(" ")
               }
-            >
-              <ul>
-                {/* <li><a href="/worksgallery"> Портфолио</a></li>
-                <li>Контакты</li>
-                <li>Что-то еще</li> */}
-              </ul>
-            </div>
+            ></div>
             {/* )} */}
           </div>
         </div>
       </header>
-      <HeadBlock />
-      {/* <Line />  */}
-      <WorksGallery />
+      {isOpen && (
+        <div className={style.openMenu}>
+          {/* <div className={style.left_animate}> */}
+            <HeadBlock isOpen={isOpen} />
+          {/* </div> */}
+          <div className={style.right_animate}>
+            <WorksGallery />
+          </div>
+        </div>
+      )}
+      {!isOpen && <HeadBlock isOpen={isOpen}/> }
     </>
   );
 };
