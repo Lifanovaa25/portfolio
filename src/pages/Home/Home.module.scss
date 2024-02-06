@@ -21,9 +21,9 @@
   animation-name: right;
   animation-timing-function: ease-in;
 //   animation-iteration-count: infinite;
-  animation-duration: 3s;
+  animation-duration: 2s;
   transform-style: preserve-3d;
-  transition: all .8s;
+  transition: transform .3s;
 }
 
 

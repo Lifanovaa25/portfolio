@@ -55,7 +55,7 @@
 }
 .max_height {
   height: calc(100vh - 350px);
-  transition: 0.8s all;
+  transition: transform .3s;
   width: 100%;
   margin-top: 250px;
   @media (max-width: 600px) {
@@ -67,7 +67,7 @@
   animation-iteration-count: 1;
   // margin-top: 250px;
   width: 100%;
-  transition: 0.3s;
+  transition: transform 0.3s;
   opacity: 0;
   display: none;
   @media (max-width: 600px) {
@@ -290,13 +290,13 @@
   animation-name: left;
   animation-timing-function: ease-in-out;
   //   animation-iteration-count: infinite;
-  animation-duration: 3s;
+  animation-duration: 2s;
   transform-style: preserve-3d;
   opacity: 0;
   position: absolute;
   left: 0;
   // display: none;
-  transition: all 0.8s;
+  transition: transform 0.25s;
 }
 @keyframes left {
   from,
