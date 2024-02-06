@@ -36,13 +36,13 @@
   background: rgb(0 0 0 / 86%);
   padding: 20px 0;
   flex-wrap: wrap;
-  >div {
-  max-width: 50%;
-width: 50%;
-  @media (max-width: 600px) {
-    max-width: 100%;
-width: 100%;
-  }
+  > div {
+    max-width: 50%;
+    width: 50%;
+    @media (max-width: 600px) {
+      max-width: 100%;
+      width: 100%;
+    }
   }
 }
 .header_section {
@@ -207,13 +207,12 @@ width: 100%;
   transform-origin: 60px 60px 0;
   position: absolute;
   top: 20%;
-@media (max-width:784px) {
-  left: 35%;
-}
-  @media (max-width:470px) {
-  left: 20%;
-  
-}
+  @media (max-width: 784px) {
+    left: 35%;
+  }
+  @media (max-width: 470px) {
+    left: 20%;
+  }
 }
 .cubespinner div {
   position: absolute;
@@ -287,47 +286,53 @@ width: 100%;
 
 .left_animate {
   //   width: 70%;
-    transform: rotateX(20deg) rotateY(-45deg) rotateZ(0deg);
-    animation-name: left;
-    animation-timing-function: ease-in-out;
+  transform: rotateX(20deg) rotateY(-45deg) rotateZ(0deg);
+  animation-name: left;
+  animation-timing-function: ease-in-out;
   //   animation-iteration-count: infinite;
-    animation-duration: 5s;
-    transform-style: preserve-3d;
-    opacity: 0;
-    // display: none;
-    transition: all .8s;
+  animation-duration: 3s;
+  transform-style: preserve-3d;
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  // display: none;
+  transition: all 0.8s;
+}
+@keyframes left {
+  from,
+  to {
+    // transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    position: absolute;
+    left: 0;
+    opacity: 1;
   }
-  @keyframes left {
-    from,
-    to {
-      transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
-    }
-    0% {
-        display: block;
-        opacity: 1;
-        width: 70%;
-    }
-    33% {
-        transform: rotateX(20deg) rotateY(-45deg) rotateZ(0deg); 
-        width: 70%;
-    }
-    // 33% {
-    //   transform: rotateY(-90deg) rotateZ(90deg);
-    // }
-    50% {
-    
-    }
-    66% { 
-         width: 20%;
+  0% {
+    // display: block;
+    // opacity: 1;
+    // width: 70%;
+  }
+  33% {
+    // transform: rotateX(20deg) rotateY(-45deg) rotateZ(0deg);
+    // width: 70%;
+  }
+  // 33% {
+  //   transform: rotateY(-90deg) rotateZ(90deg);
+  // }
+  50% {
+  }
+  66% {
+    // width: 20%;
     //   transform: rotateY(-270deg) rotateX(90deg);
-    }
-    83% {
-    //   transform: rotateX(90deg);
-    }
-    100% {
-        max-width: 0;opacity: 0;
-        display: none;
-      transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
-
-    }
   }
+  83% {
+    //   transform: rotateX(90deg);
+  }
+  100% {
+    // max-width: 0;
+    // opacity: 0;
+    // display: none;
+    // transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    left: -100%;
+    opacity: 0;
+  }
+}

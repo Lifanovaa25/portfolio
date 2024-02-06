@@ -33,13 +33,13 @@ const Home = () => {
               </label>
             </div>
             {/* {isOpen && ( */}
-            <div
+            {/* <div
               className={
                 isOpen
                   ? [s.menu, s.open].join(" ")
                   : [s.menu, s.close].join(" ")
               }
-            ></div>
+            ></div> */}
             {/* )} */}
           </div>
         </div>
